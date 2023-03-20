@@ -92,6 +92,7 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 
 <details><summary> MOSTRAR PETICIONES DE USER </summary>
 
+---
 
 - Titulo: **User Register**
 - Funcionalidad: Registra un usuario Email y Contraseña.
@@ -127,6 +128,8 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 - Method: GET
 - JSON Body: Empty
 
+---
+
 - Titulo: **Post Profile**
 - Funcionalidad: Crea un nuevo Profile de un User ya existente.
 - Request: http://localhost:3001/api/user/profile/
@@ -146,6 +149,8 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 }
 ```
 
+---
+
 - Titulo: **Delete User**
 - Funcionalidad: Elimina un User y su Profile en modalidad CASCADE
 - Request: http://localhost:3001/api/user/delete/
@@ -157,6 +162,8 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 "id": 4
 }
 ```
+
+---
 
 - Titulo: **Update Profile**
 - Funcionalidad: Actualiza los datos de un Profile Existente
@@ -183,6 +190,7 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 
 <details><summary> MOSTRAR PETICIONES DE LOAN </summary>
 
+---
 
 - Titulo: **Create Loan**
 - Funcionalidad: Crear un préstamo de un Manga asociado a un Usuario. Disminuye en las unidades que se solicita un libro (Manga), pero no permite si esto significa **< 0**
@@ -200,6 +208,8 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
     "quantity_loan": 1
 }
 ```
+
+---
 
 - Titulo: **Update Loan**
 - Funcionalidad: Actualiza un préstamo (Loan), **si esto significa un cambio en la referencia con un libro (manga_id), se incrementa y decrementa los libros que se estan cambiando en la entidad MANGA**.
@@ -220,6 +230,8 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 }
 
 ```
+
+---
 
 - Titulo: **Delete Loan**
 - Funcionalidad: Se elimina un registro de Loan, y **se devuelve la cantidad de un libro a la entidad Manga**
@@ -246,7 +258,7 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 
 <details><summary> MOSTRAR PETICIONES DE MANGA </summary>
 
-
+---
 
 - Titulo: **Get All Mangas**
 - Funcionalidad: Se llaman los datos relaciondos de las entidades Manga, Literary genres y Authors.
