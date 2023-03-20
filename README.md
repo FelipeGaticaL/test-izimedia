@@ -246,6 +246,8 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 
 ```
 
+---
+
 - Titulo: **Get All Loans**
 - Funcionalidad: Se llaman los datos relaciondos de las entidades Loan, Profile, User y Manga.
 - Request: http://localhost:3001/api/loans/get-loans
