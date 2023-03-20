@@ -34,11 +34,11 @@ nota: Se dejó el .ENV a propósito para manterner los datos de configuración e
 
 ### Diagrama o Modelo de Base de Datos(Diagrams):
 
-INSERTAR LINK
+![Image text](https://github.com/FelipeGaticaL/test-izimedia/blob/main/public/ERD%20Diagrams.jpg)
 
 ### ERD en MySQL:
 
-INSERTAR LINK
+![Image text](https://github.com/FelipeGaticaL/test-izimedia/blob/main/public/ERD%20MySql.JPG)
 
 ### Información por defecto:
 
@@ -57,21 +57,35 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 
 ```
 
+
+<details><summary>CLICK ME</summary>
+<p>
+
+#### We can hide anything, even code!
+
+```ruby
+   puts "Hello World"
+```
+
+</p>
+</details>
+
 ### Para las peticiones HTTP se utilizó una extensión en Visual Studio llamada THUNDER CLIENTE
 
 - Se creó las siguiente colección de peticiones
 
-INSERTAR LINK
+![Image text](https://github.com/FelipeGaticaL/test-izimedia/blob/main/public/Coleccion_Http.JPG)
+![Image text](https://github.com/FelipeGaticaL/test-izimedia/blob/main/public/ExtendPeticionHttp.JPG)
 
 ## Peticiones HTTP ejemplos:
 
 ### User:
 
-Titulo: **User Register**
-Funcionalidad: Registra un usuario Email y Contraseña.
-Request: http://localhost:3001/api/user/register/
-Method: POST
-JSON Body:
+- Titulo: **User Register**
+- Funcionalidad: Registra un usuario Email y Contraseña.
+- Request: http://localhost:3001/api/user/register/
+- Method: POST
+- JSON Body:
 
 ```json
 {
@@ -80,11 +94,11 @@ JSON Body:
 }
 ```
 
-Titulo: **User Login**
-Funcionalidad: Login de usuario
-Request: http://localhost:3001/api/user/login/
-Method: GET
-JSON Body:
+- Titulo: **User Login**
+- Funcionalidad: Login de usuario
+- Request: http://localhost:3001/api/user/login/
+- Method: GET
+- JSON Body:
 
 ```json
 {
@@ -93,17 +107,17 @@ JSON Body:
 }
 ```
 
-Titulo: **Get All Users**
-Funcionalidad: Obtiene todos los User y sus Profile
-Request: http://localhost:3001/api/user/users/
-Method: GET
-JSON Body: Empty
+- Titulo: **Get All Users**
+- Funcionalidad: Obtiene todos los User y sus Profile
+- Request: http://localhost:3001/api/user/users/
+- Method: GET
+- JSON Body: Empty
 
-Titulo: **Post Profile**
-Funcionalidad: Crea un nuevo Profile de un User ya existente.
-Request: http://localhost:3001/api/user/profile/
-Method: POST
-JSON Body:
+- Titulo: **Post Profile**
+- Funcionalidad: Crea un nuevo Profile de un User ya existente.
+- Request: http://localhost:3001/api/user/profile/
+- Method: POST
+- JSON Body:
 
 ```json
 {
@@ -118,11 +132,11 @@ JSON Body:
 }
 ```
 
-Titulo: **Delete User**
-Funcionalidad: Elimina un User y su Profile en modalidad CASCADE
-Request: http://localhost:3001/api/user/delete/
-Method: DELETE
-JSON Body:
+- Titulo: **Delete User**
+- Funcionalidad: Elimina un User y su Profile en modalidad CASCADE
+- Request: http://localhost:3001/api/user/delete/
+- Method: DELETE
+- JSON Body:
 
 ```json
 {
@@ -130,11 +144,11 @@ JSON Body:
 }
 ```
 
-Titulo: **Update Profile**
-Funcionalidad: Actualiza los datos de un Profile Existente
-Request: http://localhost:3001/api/user/update/
-Method: PUT
-JSON Body:
+- Titulo: **Update Profile**
+- Funcionalidad: Actualiza los datos de un Profile Existente
+- Request: http://localhost:3001/api/user/update/
+- Method: PUT
+- JSON Body:
 
 ```json
 {
@@ -151,11 +165,11 @@ JSON Body:
 
 ### Loan:
 
-Titulo: **Create Loan**
-Funcionalidad: Crear un préstamo de un Manga asociado a un Usuario. Disminuye en las unidades que se solicita un libro (Manga), pero no permite si esto significa **< 0**
-Request: http://localhost:3001/api/loans/create-loan
-Method: POST
-JSON Body:
+- Titulo: **Create Loan**
+- Funcionalidad: Crear un préstamo de un Manga asociado a un Usuario. Disminuye en las unidades que se solicita un libro (Manga), pero no permite si esto significa **< 0**
+- Request: http://localhost:3001/api/loans/create-loan
+- Method: POST
+- JSON Body:
 
 ```json
 {
@@ -168,12 +182,12 @@ JSON Body:
 }
 ```
 
-Titulo: **Update Loan**
-Funcionalidad: Actualiza un préstamo (Loan), **si esto significa un cambio en la referencia con un libro (manga_id), se incrementa y decrementa los libros que se estan cambiando en la entidad MANGA**.
+- Titulo: **Update Loan**
+- Funcionalidad: Actualiza un préstamo (Loan), **si esto significa un cambio en la referencia con un libro (manga_id), se incrementa y decrementa los libros que se estan cambiando en la entidad MANGA**.
 **
-Request: http://localhost:3001/api/loans/update
-Method: PUT
-JSON Body:
+- Request: http://localhost:3001/api/loans/update
+- Method: PUT
+- JSON Body:
 
 ```json
 {
@@ -188,11 +202,11 @@ JSON Body:
 
 ```
 
-Titulo: **Delete Loan**
-Funcionalidad: Se elimina un registro de Loan, y **se devuelve la cantidad de un libro a la entidad Manga**
-Request: http://localhost:3001/api/loans/delete
-Method: DELETE
-JSON Body:
+- Titulo: **Delete Loan**
+- Funcionalidad: Se elimina un registro de Loan, y **se devuelve la cantidad de un libro a la entidad Manga**
+- Request: http://localhost:3001/api/loans/delete
+- Method: DELETE
+- JSON Body:
 
 ```json
 {
@@ -201,18 +215,18 @@ JSON Body:
 
 ```
 
-Titulo: **Get All Loans**
-Funcionalidad: Se llaman los datos relaciondos de las entidades Loan, Profile, User y Manga.
-Request: http://localhost:3001/api/loans/get-loans
-Method: GET
-JSON Body: Empty
+- Titulo: **Get All Loans**
+- Funcionalidad: Se llaman los datos relaciondos de las entidades Loan, Profile, User y Manga.
+- Request: http://localhost:3001/api/loans/get-loans
+- Method: GET
+- JSON Body: Empty
 
 
 ### Manga:
 
-Titulo: **Get All Mangas**
-Funcionalidad: Se llaman los datos relaciondos de las entidades Manga, Literary genres y Authors.
-Request: http://localhost:3001/api/loans/get-loans
-Method: GET
-JSON Body: Empty
+- Titulo: **Get All Mangas**
+- Funcionalidad: Se llaman los datos relaciondos de las entidades Manga, Literary genres y Authors.
+- Request: http://localhost:3001/api/loans/get-loans
+- Method: GET
+- JSON Body: Empty
 
