@@ -32,16 +32,22 @@ nota: Se dejó el .ENV a propósito para manterner los datos de configuración e
   - Servicio: Sección de manejo de solicitudes y procesamiento de funcionalidades (tareas).
   - Modelo (ORM): Sección de manejo del modelo del negocio.
 
-<details><summary> Diagrama o Modelo de Base de Datos(Diagrams):</summary>
 
+### Diagrama o Modelo de Base de Datos(Diagrams):
+
+<details><summary> MOSTRAR </summary>
 
 ![Image text](https://github.com/FelipeGaticaL/test-izimedia/blob/main/public/ERD%20Diagrams.jpg)
+
 </details>
 
 ### ERD en MySQL:
 
+<details><summary> MOSTRAR </summary>
 
 ![Image text](https://github.com/FelipeGaticaL/test-izimedia/blob/main/public/ERD%20MySql.JPG)
+
+</details>
 
 ### Información por defecto:
 
@@ -64,12 +70,19 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 
 - Se creó las siguiente colección de peticiones
 
+<details><summary> MOSTRAR </summary>
+
 ![Image text](https://github.com/FelipeGaticaL/test-izimedia/blob/main/public/Coleccion_Http.JPG)
+
 ![Image text](https://github.com/FelipeGaticaL/test-izimedia/blob/main/public/ExtendPeticionHttp.JPG)
+
+</details>
 
 ## Peticiones HTTP ejemplos:
 
 ### User:
+
+<details><summary> MOSTRAR PETICIONES DE USER </summary>
 
 - Titulo: **User Register**
 - Funcionalidad: Registra un usuario Email y Contraseña.
@@ -153,7 +166,11 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 }
 ```
 
+</details>
+
 ### Loan:
+
+<details><summary> MOSTRAR PETICIONES DE LOAN </summary>
 
 - Titulo: **Create Loan**
 - Funcionalidad: Crear un préstamo de un Manga asociado a un Usuario. Disminuye en las unidades que se solicita un libro (Manga), pero no permite si esto significa **< 0**
@@ -211,8 +228,11 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 - Method: GET
 - JSON Body: Empty
 
+</details>
 
 ### Manga:
+
+<details><summary> MOSTRAR PETICIONES DE LOAN </summary>
 
 - Titulo: **Get All Mangas**
 - Funcionalidad: Se llaman los datos relaciondos de las entidades Manga, Literary genres y Authors.
@@ -220,3 +240,4 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 - Method: GET
 - JSON Body: Empty
 
+</details>
