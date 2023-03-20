@@ -32,11 +32,14 @@ nota: Se dejó el .ENV a propósito para manterner los datos de configuración e
   - Servicio: Sección de manejo de solicitudes y procesamiento de funcionalidades (tareas).
   - Modelo (ORM): Sección de manejo del modelo del negocio.
 
-### Diagrama o Modelo de Base de Datos(Diagrams):
+<details><summary> Diagrama o Modelo de Base de Datos(Diagrams):</summary>
+
 
 ![Image text](https://github.com/FelipeGaticaL/test-izimedia/blob/main/public/ERD%20Diagrams.jpg)
+</details>
 
 ### ERD en MySQL:
+
 
 ![Image text](https://github.com/FelipeGaticaL/test-izimedia/blob/main/public/ERD%20MySql.JPG)
 
@@ -56,19 +59,6 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 }
 
 ```
-
-
-<details><summary>CLICK ME</summary>
-<p>
-
-#### We can hide anything, even code!
-
-```ruby
-   puts "Hello World"
-```
-
-</p>
-</details>
 
 ### Para las peticiones HTTP se utilizó una extensión en Visual Studio llamada THUNDER CLIENTE
 
