@@ -15,6 +15,7 @@
 
 nota: Se dejó el .ENV a propósito para manterner los datos de configuración en github.
 
+---
 ### Descrición de la API:
 
 - La API es un servicio que permite a personas conseguir libros desde una biblioteca.
@@ -33,6 +34,8 @@ nota: Se dejó el .ENV a propósito para manterner los datos de configuración e
   - Modelo (ORM): Sección de manejo del modelo del negocio.
 
 
+---
+
 ### Diagrama o Modelo de Base de Datos(Diagrams):
 
 <details><summary> MOSTRAR </summary>
@@ -48,6 +51,8 @@ nota: Se dejó el .ENV a propósito para manterner los datos de configuración e
 ![Image text](https://github.com/FelipeGaticaL/test-izimedia/blob/main/public/ERD%20MySql.JPG)
 
 </details>
+
+---
 
 ### Información por defecto:
 
@@ -66,11 +71,13 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 
 ```
 
-### Para las peticiones HTTP se utilizó una extensión en Visual Studio llamada THUNDER CLIENTE
+---
+## Para las peticiones HTTP se utilizó una extensión en Visual Studio llamada THUNDER CLIENTE
 
-- Se creó las siguiente colección de peticiones
+### Se creó las siguiente colección de peticiones:
 
 <details><summary> MOSTRAR </summary>
+
 
 ![Image text](https://github.com/FelipeGaticaL/test-izimedia/blob/main/public/Coleccion_Http.JPG)
 
@@ -78,11 +85,13 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 
 </details>
 
-## Peticiones HTTP ejemplos:
+---
+### Peticiones HTTP ejemplos:
 
 ### User:
 
 <details><summary> MOSTRAR PETICIONES DE USER </summary>
+
 
 - Titulo: **User Register**
 - Funcionalidad: Registra un usuario Email y Contraseña.
@@ -172,6 +181,7 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 
 <details><summary> MOSTRAR PETICIONES DE LOAN </summary>
 
+
 - Titulo: **Create Loan**
 - Funcionalidad: Crear un préstamo de un Manga asociado a un Usuario. Disminuye en las unidades que se solicita un libro (Manga), pero no permite si esto significa **< 0**
 - Request: http://localhost:3001/api/loans/create-loan
@@ -232,7 +242,9 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
 
 ### Manga:
 
-<details><summary> MOSTRAR PETICIONES DE LOAN </summary>
+<details><summary> MOSTRAR PETICIONES DE MANGA </summary>
+
+
 
 - Titulo: **Get All Mangas**
 - Funcionalidad: Se llaman los datos relaciondos de las entidades Manga, Literary genres y Authors.
