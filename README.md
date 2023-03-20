@@ -105,6 +105,7 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
   "password": "password1234"
 }
 ```
+---
 
 - Titulo: **User Login**
 - Funcionalidad: Login de usuario
@@ -118,6 +119,7 @@ Al inciar el proyecto se creará información sobre libros y sus atributos, como
   "password": "Masterdog1234"
 }
 ```
+---
 
 - Titulo: **Get All Users**
 - Funcionalidad: Obtiene todos los User y sus Profile
