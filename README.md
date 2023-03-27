@@ -1,6 +1,5 @@
 ## API sistema de prestado de Libros(Mangas)
 
-Prueba de GitHUb
 
 ### API realizada para test de IziMedia
 
